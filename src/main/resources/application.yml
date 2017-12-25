@@ -7,8 +7,7 @@ spring:
         git:
           uri: 'https://github.com/d3adparr0t/config-repo.git'
           clone-on-start: true
-        encrypt:
-          enabled: true
+          force-pull: true
 security:
   user:
     name: 'root'
