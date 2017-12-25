@@ -5,9 +5,13 @@ spring:
     config:
       server:
         git:
-          uri: "https://github.com/d3adparr0t/config-repo.git"
+          uri: 'https://github.com/d3adparr0t/config-repo.git'
           clone-on-start: true
 security:
   user:
-    name: "root"
-    password: "s3cr3t"
+    name: 'root'
+    password: 's3cr3t'
+encrypt:
+  key-store:
+    location: 'classpath:/config-server.jks'
+    alias: 'config-server-key'
